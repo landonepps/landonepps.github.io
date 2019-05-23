@@ -25,25 +25,33 @@
         </section>
         <section class="column-small-4 footer-sections-element">
           <h1 class="footer-sections-element-heading">
-            購読
+            Subscribe
           </h1>
           <div class="footer-sections-element-description">
-            新しいエピソードの配信を購読できます。
+            We're on all your favorite podcast apps.
           </div>
-          <ul>
+          <ul class="footer-subscribe">
             {% if site.itunes_podcast_url %}
               <li>
-                <a href="{{ site.itunes_podcast_url }}" target="_blank">iTunesで購読</a>
+                <a href="{{ site.itunes_podcast_url }}" target="_blank">
+                  <img src="/images/badge-apple.svg" height="30px" >
+                </a>
+              </li>
+              <li>
+                <a href="{{ site.github.url }}/feed.xml">
+                  <img src="/images/badge-overcast.svg" height="30px">
+                </a>
               </li>
             {% endif %}
             <li>
-              <a href="http://subscribeonandroid.com/{{ site.github.url | remove: "https://" | remove: "http://" }}/feed.xml" target="_blank">Androidで購読</a>
+              <a href="{{ site.github.url }}/feed.xml" target="_blank">
+                <img src="/images/badge-google.svg" height="30px">
+              </a>
             </li>
             <li>
-              <a href="https://push.dog/subscribe?url={{ site.github.url }}/feed.xml" target="_blank">Pushdogで購読</a>
-            </li>
-            <li>
-              <a href="{{ site.github.url }}/feed.xml" target="_blank">RSSで購読</a>
+              <a href="{{ site.github.url }}/feed.xml" target="_blank">
+                <img src="/images/badge-rss.svg" height="30px">
+              </a>
             </li>
           </ul>
         </section>
