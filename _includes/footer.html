@@ -30,30 +30,38 @@
           <div class="footer-sections-element-description">
             We're on all your favorite podcast apps.
           </div>
-          <ul class="footer-subscribe">
+          <div class="row footer-subscribe">
             {% if site.itunes_podcast_url %}
-              <li>
-                <a href="{{ site.itunes_podcast_url }}" target="_blank">
-                  <img src="/images/badge-apple.svg" height="30px" >
-                </a>
-              </li>
-              <li>
-                <a href="{{ site.github.url }}/feed.xml">
-                  <img src="/images/badge-overcast.svg" height="30px">
-                </a>
-              </li>
+              <div class="column-small-6">
+                <ul>
+                  <li>
+                    <a href="{{ site.itunes_podcast_url }}" target="_blank">
+                      <img src="../images/badge-apple.svg" height="30px" >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{{ site.github.url }}/feed.xml">
+                      <img src="../images/badge-overcast.svg" height="30px">
+                    </a>
+                  </li>
+                </ul>
+              </div>
             {% endif %}
-            <li>
-              <a href="{{ site.github.url }}/feed.xml" target="_blank">
-                <img src="/images/badge-google.svg" height="30px">
-              </a>
-            </li>
-            <li>
-              <a href="{{ site.github.url }}/feed.xml" target="_blank">
-                <img src="/images/badge-rss.svg" height="30px">
-              </a>
-            </li>
-          </ul>
+            <div class="column-small-6">
+              <ul>
+                <li>
+                  <a href="{{ site.github.url }}/feed.xml" target="_blank">
+                    <img src="../images/badge-google.svg" height="30px">
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ site.github.url }}/feed.xml" target="_blank">
+                    <img src="../images/badge-rss.svg" height="30px">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </div>
     </div>
