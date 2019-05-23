@@ -23,7 +23,7 @@ google_analytics:
 hashtag: examplehashtag
 itunes_podcast_url:
 keywords: comma,separated,keywords
-language: ja
+language: en
 markdown: kramdown
 permalink: /episode/:title
 sass:
