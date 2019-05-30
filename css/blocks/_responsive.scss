@@ -30,6 +30,17 @@
   }
 }
 
+.column-small {
+  @media (min-width: $width-screen-small-minimum) {
+    float: left;
+  }
+
+  min-height: 1px;
+  padding-left: ($width-gutter / 2);
+  padding-right: ($width-gutter / 2);
+  position: relative;
+}
+
 .hidden-extra-small {
   @media (max-width: $width-screen-extra-small-maximum) {
     display: none;

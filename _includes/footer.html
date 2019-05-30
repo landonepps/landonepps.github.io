@@ -2,15 +2,7 @@
   <div class="container">
     <div class="footer-sections">
       <div class="row">
-        <section class="column-small-4 footer-sections-element">
-          <h1 class="footer-sections-element-heading">
-            {{ site.title }}
-          </h1>
-          <div class="footer-sections-element-description">
-            {{ site.description_long }}
-          </div>
-        </section>
-        <section class="column-small-4 footer-sections-element">
+        <section class="column-small-6 footer-sections-element">
           <h1 class="footer-sections-element-heading">
             #{{ site.hashtag }}
           </h1>
@@ -23,7 +15,7 @@
             </a>
           </div>
         </section>
-        <section class="column-small-4 footer-sections-element">
+        <section class="column-small-6 footer-sections-element">
           <h1 class="footer-sections-element-heading">
             Subscribe
           </h1>
@@ -32,31 +24,31 @@
           </div>
           <div class="row footer-subscribe">
             {% if site.itunes_podcast_url %}
-              <div class="column-small-6">
+              <div class="column-small">
                 <ul>
                   <li>
                     <a href="{{ site.itunes_podcast_url }}" target="_blank">
-                      <img src="{{ "/images/badge-apple.svg" | prepend:site.github.url }}" height="35px" >
+                      <img src="{{ "/images/badge-apple.svg" | prepend:site.github.url }}" height="40px" >
                     </a>
                   </li>
                   <li>
                     <a href="{{ site.github.url }}/feed.xml" target="_blank">
-                      <img src="{{ "/images/badge-overcast.svg" | prepend:site.github.url }}" height="35px">
+                      <img src="{{ "/images/badge-overcast.svg" | prepend:site.github.url }}" height="40px">
                     </a>
                   </li>
                 </ul>
               </div>
             {% endif %}
-            <div class="column-small-6">
+            <div class="column-small">
               <ul>
                 <li>
                   <a href="{{ site.github.url }}/feed.xml" target="_blank">
-                    <img src="{{ "/images/badge-rss.svg" | prepend:site.github.url }}" height="35px">
+                    <img src="{{ "/images/badge-rss.svg" | prepend:site.github.url }}" height="40px">
                   </a>
                 </li>
                 <li>
                   <a href="{{ site.github.url }}/feed.xml" target="_blank">
-                    <img src="{{ "/images/badge-google.svg" | prepend:site.github.url }}" height="35px">
+                    <img src="{{ "/images/badge-google.svg" | prepend:site.github.url }}" height="40px">
                   </a>
                 </li>
               </ul>
@@ -66,7 +58,7 @@
       </div>
     </div>
     <div class="footer-copyright">
-      © 2019 <a href="{{ site.github.url }}/">{{ site.title }}</a>
+      © {{ 'now' | date: "%Y" }} <a href="{{ site.github.url }}/">{{ site.title }}</a>
     </div>
   </div>
 </footer>
