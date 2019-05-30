@@ -1,3 +1,3 @@
-# Yattecast
+# Podcast
 
-https://r7kamura.github.io/yattecast/
+https://landonepps.github.io/podcast/
