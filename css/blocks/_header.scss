@@ -1,17 +1,37 @@
 .header {
-  // background-image: url(../images/artwork.jpg);
+  background-image: url(../images/header-background.svg);
   background-size: cover;
   background-position: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  &-logo {
+    height: 120px;
+    padding-right: 24px;
+
+    &-container {
+      float: left;
+
+      @media (max-width: $width-screen-tiny-maximum) {
+        text-align: center;
+        float: inherit;
+      }
+    }
+  }
 
   &-description {
-    color: $color-text-light-secondary;
+    color: $color-text-dark-secondary;
     font-size: 0.9rem;
+    font-weight: 400;
+
+    @media (max-width: $width-screen-tiny-maximum) {
+      text-align: center;
+    }
   }
 
   &-heading {
-    color: $color-text-light-primary;
-    text-shadow: 0 1px 5px black;
-    font-size: 2.5rem;
+    color: $color-text-dark-primary;
+    font-size: 3rem;
     font-weight: 500;
 
     a {
@@ -22,13 +42,9 @@
         color: inherit;
       }
     }
-  }
 
-  &-overlay {
-    // background-color: rgba(0, 0, 0, 0.3);
-    background-color: rgb(10, 44, 87);
-    height: 100%;
-    padding-bottom: 76px;
-    padding-top: 76px;
+    @media (max-width: $width-screen-tiny-maximum) {
+      text-align: center;
+    }
   }
 }

@@ -1,4 +1,13 @@
 <head>
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="viewport" content="width=device-width">
@@ -12,6 +21,17 @@
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:type" content="blog" />
   <meta property="og:url" content="{{ site.github.url }}{{ page.url }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="/favicon-144x144.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/vnd.microsoft.icon" sizes="32x32 48x48" href="/favicon.ico">
+  <link rel="icon" sizes="128x128" href="/favicon.icns">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="NSTokyoView">
+  <meta name="application-name" content="NSTokyoView">
+  <meta name="msapplication-TileColor" content="#64c7d2">
+  <meta name="theme-color" content="#64c7d2">
   <link rel="alternate" type="application/rss+xml" href="{{ site.github.url }}/feed.xml" />
   <link rel="stylesheet" href="{{ site.github.url }}/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.10/mediaelementplayer.min.css">

@@ -7,18 +7,16 @@
     <link>{{ site.github.url }}/</link>
     <title>{{ site.title }}</title>
     <description>{{ site.description | xml_escape }}</description>
-    <media:keywords>{{ site.keywords }}</media:keywords>
     <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology</media:category>
     <language>{{ site.language }}</language>
     <itunes:subtitle>{{ site.description | xml_escape }}</itunes:subtitle>
     <itunes:author>{{ site.author }}</itunes:author>
     <itunes:summary>{{ site.description | xml_escape }}</itunes:summary>
-    <itunes:keywords>{{ site.keywords }}</itunes:keywords>
     <itunes:owner>
       <itunes:name>{{ site.author }}</itunes:name>
       <itunes:email>{{ site.email }}</itunes:email>
     </itunes:owner>
-    <itunes:image href="{{ site.github.url }}/images/artwork.jpg" />
+    <itunes:image href="{{ site.github.url }}/images/artwork.png" />
     <itunes:category text="Technology"/>
     <itunes:explicit>no</itunes:explicit>
     {% for post in site.posts %}
@@ -28,12 +26,13 @@
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <description>{{ post.content | xml_escape }}</description>
         <guid isPermaLink="true">{{ site.github.url }}{{ post.url }}</guid>
-        <enclosure url="{{ site.github.url }}{{ post.audio_file_path }}" length="{{ post.audio_file_size }}" type="audio/mp3"/>
         <itunes:author>{{ site.author }}</itunes:author>
         <itunes:subtitle>{{ post.description }}</itunes:subtitle>
         <itunes:duration>{{ post.duration }}</itunes:duration>
         <itunes:explicit>no</itunes:explicit>
-        <media:thumbnail url="{{ site.github.url }}/images/artwork.jpg"/>
+        <enclosure url="{{ site.github.url }}{{ post.audio_file_path }}" length="{{ post.audio_file_size }}" type="audio/mpeg"/>
+        <media:content url="{{ site.github.url }}{{ post.audio_file_path }}" length="{{ post.audio_file_size }}" type="audio/mpeg" isDefault="true" medium="audio"/>
+        <media:thumbnail url="{{ site.github.url }}/images/artwork.png"/>
       </item>
     {% endfor %}
   </channel>

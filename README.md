@@ -1,3 +1,3 @@
-# Podcast
+# NSTokyoView Podcast
 
-https://landonepps.github.io/podcast/
+https://nstokyoview.com
