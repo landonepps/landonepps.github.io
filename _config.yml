@@ -1,6 +1,5 @@
 author: Jeff Bergier, Landon Epps
-description: Example podcast description.
-description_long: Example Podcast Title is a podcast about podcasting.
+description: Two iOS developers talk about working in Japan and discuss Apple news.
 email: podcast@example.com
 exclude:
   - docker
