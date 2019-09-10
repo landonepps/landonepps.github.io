@@ -1,6 +1,6 @@
 author: Jeff Bergier, Landon Epps
 description: Two iOS developers talk about working in Japan, finding a job, and recent Apple news.
-email: podcast@example.com
+email: webmaster@nstokyoview.com
 exclude:
   - docker
   - docker-compose.yml
@@ -11,7 +11,8 @@ exclude:
   - vendor
 google_analytics: UA-142468577-1
 hashtag: NSTokyoView
-itunes_podcast_url: https://itunes.apple.com/us/podcast/examplepodcasttitle/id9999999999
+itunes_podcast_id: 1478532626
+itunes_podcast_url: https://podcasts.apple.com/us/podcast/nstokyoview/id1478532626
 language: en
 markdown: kramdown
 permalink: /episode/:title
