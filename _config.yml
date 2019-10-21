@@ -1,5 +1,9 @@
 author: Jeff Bergier, Landon Epps
 description: Two iOS developers talk about working in Japan, finding a job, and recent Apple news.
+long_description: >
+  Jeff is a senior iOS developer in Tokyo and Landon is an iOS developer looking for his first job.
+  They talk about a range of topics including finding a software engineering job, working in Japan,
+  living abroad, coding bootcamps, WWDC, new features in Swift and SwiftUI, and recent Apple news.
 email: webmaster@nstokyoview.com
 exclude:
   - docker
