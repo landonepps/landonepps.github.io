@@ -11,7 +11,7 @@
     <language>{{ site.language }}</language>
     <itunes:subtitle>{{ site.description | xml_escape }}</itunes:subtitle>
     <itunes:author>{{ site.author }}</itunes:author>
-    <itunes:summary>{{ site.description | xml_escape }}</itunes:summary>
+    <itunes:summary>{{ site.long_description | xml_escape }}</itunes:summary>
     <itunes:owner>
       <itunes:name>{{ site.author }}</itunes:name>
       <itunes:email>{{ site.email }}</itunes:email>
