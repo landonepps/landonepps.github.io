@@ -30,8 +30,8 @@
         <itunes:subtitle>{{ post.description }}</itunes:subtitle>
         <itunes:duration>{{ post.duration }}</itunes:duration>
         <itunes:explicit>no</itunes:explicit>
-        <enclosure url="{{ post.audio_file_path }}" length="{{ post.audio_file_size }}" type="audio/mpeg"/>
-        <media:content url="{{ post.audio_file_path }}" length="{{ post.audio_file_size }}" type="audio/mpeg" isDefault="true" medium="audio"/>
+        <enclosure url="https://chtbl.com/track/1D774//dts.podtrac.com/redirect.mp3/{{ post.audio_file_path }}" length="{{ post.audio_file_size }}" type="audio/mpeg"/>
+        <media:content url="https://chtbl.com/track/1D774//dts.podtrac.com/redirect.mp3/{{ post.audio_file_path }}" length="{{ post.audio_file_size }}" type="audio/mpeg" isDefault="true" medium="audio"/>
         <media:thumbnail url="{{ site.github.url }}/images/artwork.jpg"/>
       </item>
     {% endfor %}
